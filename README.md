@@ -1,6 +1,6 @@
 # Google Drive Uploader Telegram Bot
 **An asyncio Telegram bot to upload files from Telegram or Direct links to Google Drive.**
-- Find it on Telegram as [Google Drive Uploader](https://t.me/uploadgdrivebot)
+- Find it on Telegram as [Google Drive Uploader](https://t.me/Gdrive_tg_bot)
 
 ## Features
 - [X] Telegram files support.
@@ -42,7 +42,7 @@ python3 bot.py
 ```
 ## Deploy on Heroku
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/cdfxscrq/gdrive-uploader-telegram-bot/tree/master)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
 - Note: Bot is in beta stage. Maybe it throw some errors.
 
