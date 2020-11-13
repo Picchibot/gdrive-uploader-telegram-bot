@@ -4,12 +4,13 @@ from pyrogram import Client, Filters
 from oauth2client.client import OAuth2WebServerFlow, FlowExchangeError
 from helpers import gDrive_sql as db
 from helpers import parent_id_sql as sql
+from config import Config
 
 OAUTH_SCOPE = "https://www.googleapis.com/auth/drive"
 REDIRECT_URI = "urn:ietf:wg:oauth:2.0:oob"
 G_DRIVE_DIR_MIME_TYPE = "application/vnd.google-apps.folder"
-G_DRIVE_CLIENT_ID = "197036948433-4sjgjrj1osm5b5neu8khh7c2nsvn96f7.apps.googleusercontent.com"
-G_DRIVE_CLIENT_SECRET = "dnXoMIu2V7HQ8G8RicrKmvlu"
+G_DRIVE_CLIENT_ID = "Config.G_DRIVE_CLIENT_ID"
+G_DRIVE_CLIENT_SECRET = "Config.G_DRIBE_CLIENT_SECRET"
 flow = None
 
 @Client.on_message(Filters.private & Filters.incoming & Filters.command(['auth']))
@@ -29,7 +30,7 @@ async def _auth(client, message):
               redirect_uri=REDIRECT_URI
       )
       auth_url = flow.step1_get_authorize_url()
-      await client.send_message(message.from_user.id, "⛓️ **To Authorize your Google Drive account visit this [URL]({}) and send the generated code here.**\n__Visit the URL > Allow permissions > you will get a code > copy it > Send it here__".format(auth_url))
+      await client.send_message(message.from_user.id, "⛓️ **To Authorize your Google Drive account visit this 👉 [These URL]({}) 👈 and send the generated code here.**\n__Visit the URL > Allow permissions > you will get a code > copy it > Send it here__".format(auth_url))
     except Exception as e:
       await message.reply_text(f"**ERROR:** ```{e}```", quote=True)
 

@@ -8,6 +8,7 @@ from plugins.token import getIdFromUrl
 from helpers import parent_id_sql as sql
 from googleapiclient.discovery import build
 from googleapiclient.errors import HttpError
+from config import Config
 
 G_DRIVE_DIR_MIME_TYPE = "application/vnd.google-apps.folder"
 G_DRIVE_FILE_LINK = "https://drive.google.com/open?id={}"
