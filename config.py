@@ -7,6 +7,8 @@ class Config:
     APP_ID = os.environ.get('APP_ID')
     API_HASH = os.environ.get('API_HASH')
     DATABASE_URL = os.environ.get('DATABASE_URL')
+    G_DRIVE_CLIENT_ID = os.environ.get('G_DRIVE_CLIENT_ID')
+    G_DRIVE_CLIENT_SECRET = os.environ.get(G_DRIVE_CLIENT_SECRET')
   else:
     BOT_TOKEN = '1394534244:AAHbVTthzn1sNbclrt9lyrrSt_Msvz46jWA' # Get it from https://t.me/BotFather
     APP_ID = '1680362' # Get it from my.telegram.org/apps
