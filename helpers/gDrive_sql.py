@@ -2,6 +2,7 @@ import pickle
 import threading
 from sqlalchemy import Column, Integer, String, LargeBinary
 from helpers import BASE, SESSION
+from config import Config
 
 
 class gDriveCreds(BASE):
