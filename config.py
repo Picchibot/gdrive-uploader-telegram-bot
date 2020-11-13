@@ -6,7 +6,11 @@ class Config:
     APP_ID = os.environ.get("APP_ID", None)
     API_HASH = os.environ.get("API_HASH", None)
     DATABASE_URL = os.environ.get("DATABASE_URL", None)
-  
+    else:
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", None)
+    APP_ID = os.environ.get("APP_ID", None)
+    API_HASH = os.environ.get("API_HASH", None)
+    DATABASE_URL = os.environ.get("DATABASE_URL", None)
 
 class Messages:
 
