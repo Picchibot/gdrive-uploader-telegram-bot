@@ -30,7 +30,7 @@ async def _auth(client, message):
               redirect_uri=REDIRECT_URI
       )
       auth_url = flow.step1_get_authorize_url()
-      await client.send_message(message.from_user.id, "⛓️ **To Authorize your Google Drive account visit this 👉 [These URL]({}) 👈 and send the generated code here.**\n__Visit the URL > Allow permissions > you will get a code > copy it > Send it here__".format(auth_url))
+      await client.send_message(message.from_user.id, "⛓️ **To Authorize your Google Drive account visit this 👉 [This URL]({}) 👈 and send the generated code here.**\n__Visit the URL > Allow permissions > you will get a code > copy it > Send it here__".format(auth_url))
     except Exception as e:
       await message.reply_text(f"**ERROR:** ```{e}```", quote=True)
 
