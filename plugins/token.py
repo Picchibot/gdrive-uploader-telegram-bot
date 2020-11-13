@@ -9,8 +9,8 @@ from config import Config
 OAUTH_SCOPE = "https://www.googleapis.com/auth/drive"
 REDIRECT_URI = "urn:ietf:wg:oauth:2.0:oob"
 G_DRIVE_DIR_MIME_TYPE = "application/vnd.google-apps.folder"
-G_DRIVE_CLIENT_ID = "Config.G_DRIVE_CLIENT_ID"
-G_DRIVE_CLIENT_SECRET = "Config.G_DRIBE_CLIENT_SECRET"
+G_DRIVE_CLIENT_ID = "285126996267-rl7lj85j6bd81c2qjiq9th1mq2pdg154.apps.googleusercontent.com"
+G_DRIVE_CLIENT_SECRET = "b4x9LJS4Z0nyc_li5H3IFubx"
 flow = None
 
 @Client.on_message(Filters.private & Filters.incoming & Filters.command(['auth']))
