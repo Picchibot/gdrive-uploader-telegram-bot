@@ -1,11 +1,11 @@
 import os
 
 class Config:
-    ENV = bool(os.environ.get('ANYTHING')
-    BOT_TOKEN = os.environ.get('BOT_TOKEN')
-    APP_ID = os.environ.get('APP_ID')
-    API_HASH = os.environ.get('API_HASH')
-    DATABASE_URL = os.environ.get('DATABASE_URL')
+    ENV = bool(os.environ.get("ANYTHING")
+    BOT_TOKEN = os.environ.get("BOT_TOKEN")
+    APP_ID = os.environ.get("APP_ID")
+    API_HASH = os.environ.get("API_HASH")
+    DATABASE_URL = os.environ.get("DATABASE_URL")
   
 
 class Messages:
