@@ -9,7 +9,7 @@ class Config:
     DATABASE_URL = os.environ.get('DATABASE_URL')
   else:
     ENV = 'ANYTHING'
-    BOT_TOKEN = '1394534244:AAHbVTthzn1sNbclrt9lyrrSt_Msvz46jWA' # Get it from https://t.me/BotFather
+    BOT_TOKEN = '1256063269:AAG3L_f5aUoPlkfL7vj61TTWhF0v6e5Bojs' # Get it from https://t.me/BotFather
     APP_ID = '1680362' # Get it from my.telegram.org/apps
     API_HASH = '8cebfa99b9719c28a5e16fedaa0eeaad' # Get it from my.telegram.org/apps
     DATABASE_URL = 'postgres://xzqkljfifrmlxs:079c0241c5b8593092750db99abfe200e50dad4437a4f194cf91235100411bd7@ec2-54-235-192-146.compute-1.amazonaws.com:5432/da84p9fia0vnkq' # SQL Database URL / Heroku Postgres URL
@@ -34,5 +34,5 @@ class Messages:
         
         "**Rules & Precautions**\n__1. Don't copy BIG Google Drive Files/Folders. It may hang the bot and your files maybe damaged.\n2. Send One request at a time unless bot will stop all processes.\n3. Don't send slow links @transload it first.\n4. Don't misuse, overload or abuse this free service.__",
         
-        "**Developed by @viperadnan**"
+        "**Developed by @HXBots**"
         ]
